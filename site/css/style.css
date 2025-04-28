@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Вращение по часовой */
+@keyframes spinCW {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+/* Вращение против часовой */
+@keyframes spinCCW {
+  from { transform: rotate(360deg); }
+  to   { transform: rotate(0deg); }
+}
+
+.rotate-clockwise {
+  animation: spinCW 20s linear infinite;
+}
+.rotate-counterclockwise {
+  animation: spinCCW 20s linear infinite;
+}

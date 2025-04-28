@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Astra — Голосовой помощник</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-white text-black overflow-y-auto font-sans">
+
+  <header class="flex justify-between items-center p-6">
+    <h1 class="text-3xl font-bold">Astra</h1>
+    <nav>
+      <a href="#" class="mx-2 hover:underline">Главная</a>
+      <a href="#" class="mx-2 hover:underline">Купить</a>
+      <a href="#" class="mx-2 hover:underline">Статистика</a>
+      <a href="#" class="mx-2 hover:underline">Магазин</a>
+    </nav>
+  </header>
+
+  <!-- Секция сразу под шапкой, по центру, блоки одинаковой высоты -->
+  <section class="w-full pt-12">
+    <div class="max-w-screen-lg mx-auto flex flex-col lg:flex-row items-stretch justify-center gap-6">
+
+      <!-- 1) Блок с кругляшками -->
+      <div class="relative w-[350px] flex-shrink-0">
+        <!-- рамка делаем высоту h-full, чтобы тянулась под текст -->
+        <div class="relative h-full">
+          <!-- SVG1 -->
+          <div class="absolute top-1/2 left-1/2"
+               style="transform: translate(-50%,-50%) translate(-20px,10px);">
+            <img src="assets/Vectors/ve3.svg"
+                 class="w-[320px] h-[320px] opacity-15 rotate-clockwise"
+                 style="transform-origin:center" />
+          </div>
+          <!-- mp.svg над всеми -->
+          <div class="absolute top-1/2 left-1/2 z-20"
+               style="transform: translate(-50%,-50%);">
+            <img src="assets/Vectors/mp.svg"
+                 class="w-[50px] h-[50px]" />
+          </div>
+          <!-- белый кружок -->
+          <div class="absolute top-1/2 left-1/2 w-[100px] h-[100px] bg-white opacity-35 rounded-full"
+               style="transform: translate(-50%,-50%);"></div>
+          <!-- SVG2 -->
+          <div class="absolute top-1/2 left-1/2"
+               style="transform: translate(-50%,-50%) translate(15px,-15px);">
+            <img src="assets/Vectors/ve3.svg"
+                 class="w-[280px] h-[280px] opacity-15 rotate-counterclockwise"
+                 style="transform-origin:center" />
+          </div>
+          <!-- SVG3 -->
+          <div class="absolute top-1/2 left-1/2"
+               style="transform: translate(-50%,-50%) translate(-10px,20px);">
+            <img src="assets/Vectors/ve3.svg"
+                 class="w-[240px] h-[240px] opacity-15 rotate-clockwise"
+                 style="transform-origin:center" />
+          </div>
+          <!-- SVG4 -->
+          <div class="absolute top-1/2 left-1/2"
+               style="transform: translate(-50%,-50%) translate(25px,-5px);">
+            <img src="assets/Vectors/ve3.svg"
+                 class="w-[200px] h-[200px] opacity-15 rotate-counterclockwise"
+                 style="transform-origin:center" />
+          </div>
+          <!-- SVG5 -->
+          <div class="absolute top-1/2 left-1/2"
+               style="transform: translate(-50%,-50%) translate(-15px,15px);">
+            <img src="assets/Vectors/ve3.svg"
+                 class="w-[160px] h-[160px] opacity-15 rotate-clockwise"
+                 style="transform-origin:center" />
+          </div>
+          <!-- SVG6 -->
+          <div class="absolute top-1/2 left-1/2"
+               style="transform: translate(-50%,-50%) translate(10px,-10px);">
+            <img src="assets/Vectors/ve3.svg"
+                 class="w-[120px] h-[120px] opacity-15 rotate-counterclockwise"
+                 style="transform-origin:center" />
+          </div>
+        </div>
+      </div>
+
+      <!-- 2) Текстовый блок (отступ слева + одинаковая высота) -->
+      <div class="flex-1 flex flex-col justify-center items-start text-left p-8 pl-12">
+        <h3 class="text-3xl font-bold mb-4 bg-blue-100 text-black px-4 py-2 rounded-md inline-block">
+          Astra — Что это, и с чем это едят?
+        </h3>
+        <p class="text-lg leading-relaxed max-w-md">
+          Astra — твой персональный голосовой ассистент, который помогает, решает задачи и делает жизнь удобней.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
